@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <link rel="stylesheet" href="./_css/basic.css" />
+    <link rel="stylesheet" href="./_css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <!-- <link rel="shortcut icon" href="_data/images/favicon.ico"> -->
+
+    <!-- SCTIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./_js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+    <script src="./_js/fullcalendar.js"></script>
+
+    <title>Buddy</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="wrap_in">
+        <header class="flex">
+          <div class="logo">
+            <a href=""><img src="./_css/logo.png" alt="Buddy" /></a>
+          </div>
+          <div class="header_menu flex">
+            <!-- <div class="btn_sing">로그인</div> -->
+            <div class="user_status">하루틴님 환영합니다.</div>
+          </div>
+        </header>
+        <div class="contens flex">
+          <div class="contens_in list flex">
+              <div class="btn_add_routine on">일정등록하기</div>
+            <div class="routine_list_box">
+              <div class="btn_routine">
+                <div class="btn_my_routine"  style="background-color:#eee;">일</div>
+                <div class="btn_my_routine">주</div>
+                <div class="btn_today_routine">달</div>
+              </div>
+              <div class="routine_list">
+                <div class="rl_my"><input type="checkbox">운동</div>
+                <div class="rl_my"><input type="checkbox">청소</div>
+                <div class="rl_my"><input type="checkbox">영어공부</div>
+                <div class="rl_my"><input type="checkbox">빨래</div>
+              </div>
+            </div>
+          </div>
+          <div class="contens_in main">
+            <!-- <div class="cal">
+              <div id="calendar"></div>
+            </div> -->
+            <div class="routine_add">
+              <div class="routine_add_flex"><spa class="w100pxtext">루틴명</spa><input type="text" / class="w100"></div>
+              <div class="routine_add_flex">
+                <span class="w100pxtext">반복주기</span>
+                <select name="" id="" class="w100">
+                  <option value="">매일</option>
+                  <option value="">매주</option>
+                  <option value="">매월</option>
+                </select>
+              </div>
+              <div>
+                <div class="routine_add_flex ">
+                  <span class="w100pxtext">주기</span>
+                  <div class="w100">
+                  <label for=""><input type="checkbox" />월</label>
+                  <label for=""><input type="checkbox" />화</label>
+                  <label for=""><input type="checkbox" />수</label>
+                  <label for=""><input type="checkbox" />목</label>
+                  <label for=""><input type="checkbox" />금</label>
+                  <label for=""><input type="checkbox" />토</label>
+                  <label for=""><input type="checkbox" />일</label>
+                  </div>
+                </div>
+                <!-- <div>결과</div> -->
+              </div>
+              <div class="routine_add_flex start">
+                <span class="w100pxtext">종료</span>
+                <div>
+                  <label for=""><input type="radio">없음</label>
+                  <label for=""><input type="radio">날짜</label>
+                </div>
+                <div class="">
+                  <input type="date">
+                  <input type="date">
+                </div>
+                <!-- <div>결과</div> -->
+              </div>
+              <div class="routine_add_flex column">
+                <span class="w100pxtext">메모</span>
+                <textarea name="" id=""></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

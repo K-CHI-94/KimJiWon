@@ -1,0 +1,174 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+    --main-green: #0a5c36;
+    --light-gray:#f4f4f4;
+}
+.green{
+    color: var(--main-green);
+}
+.main_text{
+    color: var(--main-green);
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -1px;
+    /* color: #333; */
+}
+.signup_container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    min-width: 1050px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.signup-form {
+    width: 640px;
+    /* max-width: 25rem; */
+    /* margin: 2rem auto 0;  */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.req_text {
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    border-bottom: 2px solid rgb(51, 51, 51);
+    line-height: 17px;
+    text-align: right;
+}
+.inp_year {
+    border: none;
+}
+.inp_wrap {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.inp_lab {
+    width: 110px;
+    padding-top: 12px;
+    text-align: left;
+}
+.inp_lab_text {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+}
+.star {
+    color: rgb(238, 106, 123);
+}
+.inp_box_wrap {
+    flex: 1 1 0%;
+}
+.inp_box {
+    padding-bottom: 0px;
+}
+.inp_birth_wrap{
+    flex: 1 1 0%;
+    border: 1px solid rbg(204, 204, 204);
+}
+.inp_birth {
+    /* padding-bottom: 0px; */
+    display: flex;
+    height: 44px;
+    align-items: center;
+    /* -webkit-box-align: center; */
+    width: 100%;
+    border: 1px solid rgb(204,204,204);
+    padding: 0px 15px;
+}
+/* .inp_year_wrap {
+    padding-bottom: 0px;
+    border: none;
+} */
+.inp_year {
+    position: relative;
+    border: none;
+}
+.inp_text {
+    position: relative;
+    height: 48px;
+}
+.inp_text_css {
+    width: 100%;
+    height: 46px; 
+    padding: 0px 11px 1px 15px;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: 1px solid rgb(221,221,221);
+    box-sizing: border-box;
+}
+.birth_text{
+    border: none;
+    height: 40;
+    text-align: center;
+}
+
+.inp_btn_wrap {
+    width: 110px;
+    margin-left: 8px;
+}
+.inp_btn {
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--main-green);
+    background-color: rgb(255,255,255);
+    border-radius: 3px;
+    color: var(--main-green);
+}
+.inp_btn_text {
+    /* color: var(--main-green); */
+    font-weight: 500;
+    font-size: 13px;
+}
+/* .signup-form input {
+    width: 100%;
+    line-height: 2;
+    padding-left: 0.5rem;
+    margin: 0.6rem;
+    /* border: 3px solid var(--light-gray);
+    border-radius: 3px; 
+} */
+.inp_submitBtn_wrap {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(51, 51, 51);
+    padding: 40px 0px;
+}
+#signupBtn {
+    background-color: var(--main-green);
+    color: white;
+    /* border: none; */
+    /* border: 3px solid var(--main-blue); */
+    cursor: pointer;
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 240px;
+    height: 50px;
+    border-radius: 3px;
+    border: 0 none;
+}
+
+#signupBtn:hover {
+    color: black;
+}

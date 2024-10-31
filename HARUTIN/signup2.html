@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./_css/signup2.css">
+    <!-- <link href="${path}/resources/css/signup.css" rel="stylesheet"> :jsp경로-->
+</head>
+<body>
+
+    <main>
+        <div class="inner">
+            <div class="signup_container">
+                <div class="main_text">회원가입</div>
+                <div class="signup-form">
+                	<form action="./signupProcess.do" method="get">
+                    <div class="req_text">
+                        <span class="star">*</span>필수입력사항
+                    </div>
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                아이디
+                                <span class="star">*</span>
+                            </label>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="text" class="inp_text_css" name="member_id" placeholder="아이디를 입력해주세요. (영문/숫자 6~15자리 이내)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                            <button class="inp_btn" type="button">
+                                <span class="inp_btn_text">중복확인</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                비밀번호
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="password" class="inp_text_css" name="member_pw" placeholder="비밀번호를 입력해주세요. (영문/숫/특수문자 조합 8~12자 이내)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                        </div>
+                    </div>
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                닉네임
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="text" class="inp_text_css" name="member_nick" placeholder="닉네임을 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                        </div>
+                    </div>
+
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                생년월일
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_birth_wrap">
+                            <div class="inp_birth">
+                                <div class="inp_year_wrap">
+                                    <div class="inp_year">
+                                        <input type="text" class="birth_text" name="member_birth" placeholder="YYYY">
+                                    </div>
+                                </div>
+                                <span class="slash">/</span>
+                                <div class="inp_mth_wrap">
+                                    <div class="inp_mth">
+                                        <input type="text"  class="birth_text" name="member_birth" placeholder="MM">
+                                    </div>
+                                </div>
+                                <span class="slash">/</span>
+                                <div class="inp_day_wrap">
+                                    <div class="inp_day">
+                                        <input type="text"  class="birth_text" name="member_birth" placeholder="DD">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                        </div>
+                    </div>
+                    <!-- <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                생년월일
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="text" class="inp_text_css" name="member_birth" placeholder="ex.19940904">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                        </div>
+                    </div> -->
+
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                휴대폰
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="text" class="inp_text_css" name="member_phone" placeholder="숫자만 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                        </div>
+                    </div>
+                    <div class="inp_wrap">
+                        <div class="inp_lab">
+                            <label class="inp_lab_text">
+                                이메일
+                            </label>
+                            <span class="star">*</span>
+                        </div>
+                        <div class="inp_box_wrap">
+                            <div class="inp_box">
+                                <div class="inp_text">
+                                    <input type="text" class="inp_text_css" name="member_email" placeholder="ex. rt@naver.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_btn_wrap">
+                            <button class="inp_btn" type="submit">
+                                <span class="inp_btn_text">인증하기</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inp_submitBtn_wrap">
+                        <button class="inp_btn" id="signupBtn" type="submit">
+                            <span class="inp_btn_text">가입하기</span>
+                        </button>
+                    </div>
+                    
+                    <!-- <input type="submit" value="회원가입" id="signupBtn"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
